@@ -1,0 +1,85 @@
+/* You can not modify anything in the HTML
+/* You can only modify the CSS file */
+/* Section 1 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body {
+    max-width: 1440px;
+    background-color: #F9F5ED;
+    margin: auto;
+    overflow: hidden;
+}
+
+nav {
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    list-style-type: none;
+    margin-right: 50px;
+    /* font-weight: 600; */
+}
+
+nav ul li:first-child {
+    font-weight: bold;
+}
+
+nav div img {
+    width: 100px;
+}
+
+.nav-button {
+    background-color: #5A20CB;
+    border: none;
+    margin: 10px 30px;
+    padding: 15px 30px ;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 15px;
+}
+
+/* Section 2 */
+.banner-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5%;
+}
+
+/* left side */
+.banner-container div h1, .banner-container div p, .banner-container div button {
+    width: 70%;
+}
+
+.banner-container div h1 {
+    font-size: 55px;
+}
+
+.banner-container div h1 span {
+    color: #5A20CB;
+}
+
+.banner-container div p {
+    margin: 5% 0;
+    color: #808080;
+    font-size: 15px;
+}
+
+/* right side */
+.banner-container div div img{
+    width: 30%;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form in HTML</title>
+</head>
+<body>
+    <a href="./index.html"><button>Homepage</button></a>
+    
+    <h2>Race Registration Form</h2>
+    <form action="">
+        <!-- Image -->
+        <label for="image"><input type="image" src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cmVnaXN0cmF0aW9uJTIwZm9ybXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="registration_image" width="200"></label><br><br>
+
+        <!-- Email -->
+        <label for="email">Email: <input type="email" name="input_email" id="input_email" placeholder="Enter your email"></label><br><br>
+
+        <!-- Radio -->
+        <label for="title">Title: 
+            <input type="radio" name="title" id="input_mr">Mr 
+            <input type="radio" name="title" id="input_mrs">Mrs 
+            <input type="radio" name="title" id="ms">Ms</label><br><br>
+
+        <label for="select_trip">Select Trip - 
+            <input type="radio" name="select_trip" id="select_stage_race">Stage Race
+            <input type="radio" name="select_trip" id="select_mt_everest_challenge_marathon">Mt. Everest Challenge Marathon (4 days trip)
+            <input type="radio" name="select_trip" id="select_mt_everest_bike_rally">Mt. Everest Bike Rally
+        </label><br><br>
+
+        <!-- Range -->
+        <label for="complexity">Enter your complexity <input type="range" name="input_complexity" id="input_complexity">
+        </label><br><br>
+
+        <!-- Text -->
+        <label for="first_name">First Name: 
+            <input type="text" name="input_first_name" id="input_first_name" placeholder="Enter your first name">
+        </label><br><br>
+
+        <label for="last_name">Last Name: 
+            <input type="text" name="input_last_name" id="input_last_name" placeholder="Enter your last name">
+        </label><br><br>
+
+        <label for="address">Address: 
+            <input type="text" name="input_address" id="input_address" placeholder="Enter your address">
+        </label><br><br>
+
+        <label for="phone">Phone: 
+            <input type="text" name="input_phone" id="input_phone" placeholder="Enter your phone">
+        </label><br><br>
+
+        <!-- Date -->
+        <label for="dob">Date of Birth: <input type="date" name="input_dob" id="input_dob">
+        </label><br><br>
+
+        <!-- Checkbox -->
+        <label for="select_option">I am a  
+            <input type="checkbox" name="input_runner" id="input_runner">Runner  
+            <input type="checkbox" name="input_walker" id="input_walker">Walker  
+            <input type="checkbox" name="input_cyclist" id="input_cyclist">Cyclist
+        </label><br><br>
+
+            <label for="select_option">T-Shirt Size  
+                <input type="checkbox" name="input_small" id="input_small">Small  
+                <input type="checkbox" name="input_medium" id="input_medium">Medium  
+                <input type="checkbox" name="input_large" id="input_large">Large
+                <input type="checkbox" name="input_xl" id="input_xl">XL
+            </label><br><br>
+
+        <!-- Add your photo (file) -->
+        <label for="upload_photo">Upload your photo here <br><input type="file" name="input_file" id="input_file">
+        </label><br><br>
+
+        <!-- Password -->
+        <label for="coupon_code">Enter coupon code: <input type="password" name="input_coupon_code" id="input_coupon_code">
+        </label><br><br>
+
+        <!-- Hidden -->
+        <label for="form_type"><input type="hidden" name="form_type"></label>
+
+        <!-- Submit (submit) -->
+        <input type="submit" value="Submit">
+        
+        <!-- Reset (reset) -->
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>

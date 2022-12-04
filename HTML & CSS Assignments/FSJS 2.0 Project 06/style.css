@@ -1,0 +1,62 @@
+/* You can not modify anything from the HTML file */
+/* You can only modify the CSS file */
+/* Section 1 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body{
+    max-width: 1440px;
+    margin: auto;
+    overflow: hidden;
+}
+
+nav {
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    list-style-type: none;
+    margin-right: 50px;
+    font-size: 20px;
+}
+
+nav ul li:first-child {
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.navbar-container div img {
+    width: 150px;
+}
+
+.button-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-icon svg {
+    width: 20px;
+}
+
+.nav-button {
+    padding: 10% 60%;
+    margin-left: 10%;
+    border-radius: 15px;
+    font-size: 20px;
+}
+
+/* Section 2 */

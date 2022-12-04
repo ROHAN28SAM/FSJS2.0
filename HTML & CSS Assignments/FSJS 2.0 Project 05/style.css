@@ -1,0 +1,87 @@
+/* You can not modify anything in the HTML */
+/* You can only modify the CSS file */
+/* Section 1 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body {
+    margin: auto;
+    overflow: hidden;
+    background-image: url("./assets/bg.png");
+    background-repeat: no-repeat;
+    background-size: 1550px 750px;
+}
+
+nav {
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    background-color: #000000;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    background-color: #000000;
+}
+
+nav ul li {
+    list-style-type: none;
+    margin-right: 50px;
+    /* font-weight: 600; */
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.logo {
+    width: 100px;
+    background-color: #000000;
+}
+
+.button-small {
+    background-color: #8D3DAF;
+    border: none;
+    margin: 10px 30px;
+    padding: 15px 30px ;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 15px;
+}
+
+/* Section 2 */
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero h1 {
+    margin: 5% 20%;
+    font-size: 95px;
+    color: #ffffff;
+}
+
+.hero p {
+    margin: -5% 20%;
+    font-size: 35px;
+    color: #ffffff;
+}
+
+.button-large {
+    background-color: #8D3DAF;
+    border: none;
+    margin: 100px 30px;
+    padding: 20px 30px ;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 25px;
+}
