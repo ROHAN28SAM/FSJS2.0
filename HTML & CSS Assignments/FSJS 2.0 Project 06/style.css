@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial;
+    font-family: Orbitron;
 }
 
 body{
@@ -49,7 +49,7 @@ nav ul li:first-child {
 }
 
 .search-icon svg {
-    width: 20px;
+    width: 25px;
 }
 
 .nav-button {
@@ -60,3 +60,92 @@ nav ul li:first-child {
 }
 
 /* Section 2 */
+.hero-container{
+    display: flex;
+    margin: 0px 10px; 
+}
+
+.hero-container>div>img{
+    width: 350px;
+    z-index: 1;
+    margin-top: 125px;
+}
+
+.square img{
+    width: 240px;
+    position: absolute;
+    margin-top: 360px;
+    margin-left: 160px;
+    z-index: -1;
+}
+
+.star1 img{
+    z-index: -1;
+    position: absolute;
+    margin-left: 1280px;
+    width: 50px;
+}
+
+.star2 img{
+    z-index: -1;
+    position: absolute;
+    margin-left: 550px;
+    margin-top: 500px;
+    width: 40px;
+}
+
+.globe img{
+    z-index: -1;
+    position: absolute;
+    margin-left: 780px;
+    margin-top: -18px;
+    width: 50px;
+}
+
+.hero-container-right{
+    margin-top: 70px;
+    margin-left: 82px;
+    z-index: -1;
+    text-align: center;
+}
+
+.hero-heading{
+    font-size: 50px;
+}
+
+.hero-description{
+    font-size: 15px;
+    padding: 100px;
+    margin: 0px 50px;
+    font-weight: 320;
+}
+
+.button-email{
+    background-color: #ffffff;
+    /* padding: 0.25rem 2em; */
+    padding: 4px 32px;
+    border-radius: 8px;
+    font-size: 18px;
+    margin: 5px 8px;
+}
+
+.button-join{
+    background-color: #0b0c0e;
+    color: #ffffff;
+    border: #0b0c0e;
+    padding: 4px 8px;
+    border-radius: 8px;
+    font-size: 18px;
+    margin: 5px 8px;
+}
+
+.contact-heading{
+    margin-top: 62px;
+    font-weight: 400;
+
+}
+
+.icons img{
+    width: 35px;
+    margin: 20px 10px 0px 10px;
+}

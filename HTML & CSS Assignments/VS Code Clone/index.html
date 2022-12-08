@@ -210,107 +210,114 @@
 
     <!-- Alternative Download Options -->
     <!-- Windows -->
-    <section class="flex justify-center align-center gap-7 mt-5 pt-[50px] pb-[50px]">
-        <div class="button">
+    <section class="flex justify-center align-center gap-[100px] mt-8 ">
+        <div class="button pb-[50px]"> 
             <div class="download">
-                <div><img src="Assets/WS-Code.png" alt="" width="120px" class="ml-[40px]"></div>
-                <button class="bg-[#0066b8] px-[60px] py-2 mt-5 text-white font-semibold">
+                <div><img src="Assets/WS-Code.png" alt="" width="120px" class="ml-[50px]"></div>
+                <button class="bg-[#0066b8] px-[90px] py-2 mt-5 text-white font-semibold">
                     <div class="flex"><img src="./Assets/nav-download-icon.svg" alt="download-icon" width="20px">
                     <p class="ml-2">Windows</p>
                     </div>
                     <small class="text-center justify-center items-start">Windows 8, 10, 11</small>
                 </button>
-                <table>
-                    <tbody>
-                        <tr>
-                            <td class="text-center"><strong>User Installer</strong></td>
-                            <td class="bg-[#0066b8]"><a href="">x64</a></td>
-                            <td><a href="">x86</a></td>
-                            <td><a href="">Arm64</a></td>
-                        </tr>
-                        <tr>
-                            <td class="text-center"><strong>System Installer</strong></td>
-                            <td class="bg-[#0066b8] mt-1 mb-2"><a href="">x64</a></td>
-                            <td><a href="">x86</a></td>
-                            <td><a href="">Arm64</a></td>
-                        </tr>
-                        <tr>
-                            <td class="text-center"><strong>.zip</strong></td>
-                            <td class="bg-[#0066b8] mt-1 mb-2"><a href="">x64</a></td>
-                            <td><a href="">x86</a></td>
-                            <td><a href="">Arm64</a></td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="absolute">
+                    <div class="grid grid-cols-4 justify-items-start mt-4">
+                        <div>User Installer</div>
+                        <button><small>x64</small></button>
+                        <button><small>Arm32</small></button>
+                        <button><small>Arm64</small></button>
+                        <div>System Installer</div>
+                        <button><small>x64</small></button>
+                        <button><small>Arm32</small></button>
+                        <button><small>Arm64</small></button>
+                        <div>.zip</div>
+                        <button><small>x64</small></button>
+                        <button><small>Arm32</small></button>
+                        <button><small>Arm64</small></button>
+                        <div>Snap</div>
+                        <button><small>Snap Store</small></button>
+                    </div>
+                    <div class="grid grid-cols-4 justify-items-start">
+                        <div>CLI</div>
+                        <button><small>x64</small></button>
+                        <button><small>Arm32</small></button>
+                        <button><small>Arm64</small></button>
+                    </div>
+                </div>
             </div>
         </div>
 
     <!-- Linux -->
-        <div class="button">
+        <div class="button pb-[50px]">
             <div class="download">
-                <div><img src="./Assets/Linux.png" alt="" width="150px"></div>
-                <button>
-                    <img src="" alt="">.deb
-                    <small>Debian, Ubuntu</small>
+                <div class="ml-[75px]"><img src="./Assets/Linux.png" alt="" width="115px"></div>
+                <button class="bg-[#0066b8] px-[20px] py-2 mt-5 text-white font-semibold">
+                    <div class="flex"><img src="./Assets/nav-download-icon.svg" alt="download-icon" width="20px">
+                    <p class="ml-2 text-center">.deb</p>
+                    </div>
+                    <small class="text-center justify-center items-start">Debian, Ubuntu</small>
                 </button>
-                <button>
-                    <img src="" alt="">.rpm
-                    <small>Red Hat, Fedora, SUSE</small>
+                <button class="bg-[#0066b8] px-[10px] py-2 mt-5 text-white font-semibold">
+                    <div class="flex justify-center"><img src="./Assets/nav-download-icon.svg" alt="download-icon" width="20px">
+                        <p class="ml-2 text-center">.rpm</p>
+                        </div>
+                    <small class="text-center justify-center items-start">Red Hat, Fedora, SUSE</small>
                 </button>
-                <table>
-                    <tbody>
-                        <tr>
-                            <td><strong>.deb</strong></td>
-                            <td><a href="">x64</a></td>
-                            <td><a href="">Arm32</a></td>
-                            <td><a href="">Arm64</a></td>
-                        </tr>
-                        <tr>
-                            <td><strong>.rpm</strong></td>
-                            <td><a href="">x64</a></td>
-                            <td><a href="">Arm32</a></td>
-                            <td><a href="">Arm64</a></td>
-                        </tr>
-                        <tr>
-                            <td><strong>.tar.gz</strong></td>
-                            <td><a href="">x64</a></td>
-                            <td><a href="">Arm32</a></td>
-                            <td><a href="">Arm64</a></td>
-                        </tr>
-                        <tr>
-                            <td><strong>Snap</strong></td>
-                            <td>Snap Store</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="absolute ml-[25px]">
+                    <div class="grid grid-cols-4 justify-items-start mt-4">
+                        <div>.deb</div>
+                        <button><small>x64</small></button>
+                        <button><small>Arm32</small></button>
+                        <button><small>Arm64</small></button>
+                        <div>.rpm</div>
+                        <button><small>x64</small></button>
+                        <button><small>Arm32</small></button>
+                        <button><small>Arm64</small></button>
+                        <div>.tar.gz</div>
+                        <button><small>x64</small></button>
+                        <button><small>Arm32</small></button>
+                        <button><small>Arm64</small></button>
+                        <div>Snap</div>
+                        <button><small>Snap Store</small></button>
+                    </div>
+                    <div class="grid grid-cols-4 justify-items-start">
+                        <div>CLI</div>
+                        <button><small>x64</small></button>
+                        <button><small>Arm32</small></button>
+                        <button><small>Arm64</small></button>
+                    </div>
+                </div>
             </div>
         </div>
 
         <!-- ios -->
-        <div class="button">
+        <div class="button pb-[50px]">
             <div class="download">
-                <div><img src="./Assets/ios.png" alt="" width="130px"></div>
-                <button>
-                    <img src="" alt="">Mac
-                    <small>macOS 10.11+</small>
+                <div class="ml-[70px]"><img src="./Assets/ios.png" alt="" width="100px"></div>
+                <button class="bg-[#0066b8] px-[100px] py-2 mt-5 text-white font-semibold">
+                    <div class="flex"><img src="./Assets/nav-download-icon.svg" alt="download-icon" width="20px">
+                        <p class="ml-2 text-center">Mac</p>
+                        </div>
+                    <small class="text-center justify-center items-start">macOS 10.11+</small>
                 </button>
-                <table>
-                    <tbody>
-                        <tr>
-                            <td><strong>.zip</strong></td>
-                            <td><a href="">Universal</a></td>
-                            <td><a href="">Intel chip</a></td>
-                            <td><a href="">Apple silicon</a></td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="absolute">
+                    <div class="grid grid-cols-4 justify-items-start mt-4">
+                        <div>.zip</div>
+                        <button><small>Intel Chip</small></button>
+                        <button><small>Apple silicon</small></button>
+                        <button><small>Universal</small></button>
+                        <div>CLI</div>
+                        <button><small>Intel Chip</small></button>
+                        <button><small>Apple silicon</small></button>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Licence -->
     <section class="bg-[#f5f5f5] ">
-        <div class="flex justify-center items-center pt-[60px] pb-[80px] gap-[150px]">
+        <div class="flex justify-center items-center pt-[60px] pb-[80px] gap-[150px] mt-[100px]">
             <div class="text-center">
                 <p class="font-semibold text-[20px]">Want new features sooner?</p>
                 <p class="font-normal text-[15px] leading-8">Get the <span class="text-[#347cbd] hover:underline">Insiders build</span> instead.</p>
