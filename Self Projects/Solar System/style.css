@@ -1,0 +1,1006 @@
+body {
+    zoom: 15%;
+    /* background-color: #111111; */
+    background-image: url(./Assets/Background.avif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 5000px 5000px;
+    
+}
+.universe {
+  position: relative;
+  width: 5000px;
+  height: 5000px;
+  margin: auto;
+}
+
+/* Sun */
+.sun {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: #fae20a;
+    margin-top: -100px;
+    margin-left: -100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+/* Mercury */
+.mercury_orbit {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    border: 1px solid #c12e10;
+    margin-left: -140px;
+    margin-top: -140px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.mercury_spin {
+    width: 280px;
+    height: 280px;
+    margin-left: -140px;
+    margin-top: -140px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    animation: spin 8.8s linear infinite;
+}
+
+.mercury {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #7d7d7d;
+    margin-top: -13.5px;
+    margin-left: -13.5px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+
+/* Venus */
+.venus_orbit {
+    width: 370px;
+    height: 370px;
+    border-radius: 50%;
+    border: 1px solid #c5cb14;
+    margin-top: -185px;
+    margin-left: -185px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.venus_spin {
+    width: 370px;
+    height: 370px;
+    margin-top: -185px;
+    margin-left: -185px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    animation: spin 24.1s linear infinite;
+}
+
+.venus {
+    height: 40px;
+    width: 40px;
+    background-color: #af6914;
+    border-radius: 50%;
+    margin-top: -20px;
+    margin-left: -20px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+
+/* Earth */
+.earth_orbit {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    border: 1px solid #9ed70e;
+    margin-left: -250px;
+    margin-top: -250px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.earth_spin {   
+    width: 500px;
+    height: 500px;
+    margin-left: -250px;
+    margin-top: -250px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    animation: spin 36.5s linear infinite;
+  }
+
+.earth {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-left: -25px;
+    margin-top: -25px;
+    background-color: #496883;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+
+/* Moon */
+.moon_orbit {
+    height: 90px;
+    width: 90px;
+    /* border: 1px solid #111111; */
+    margin-top: -45px;
+    margin-left: -45px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+.moon_spin {
+    height: 90px;
+    width: 90px;
+    margin-top: -45px;
+    margin-left: -45px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    animation: spin 3s linear infinite;
+  }
+
+.moon {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: #ffffff;
+    margin-top: -6px;
+    margin-left: -6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+
+/* Mars */
+.mars_orbit {
+    width: 750px;
+    height: 750px;
+    border-radius: 50%;
+    border: 1px solid #25cb16;
+    margin-left: -375px;
+    margin-top: -375px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.mars_spin {
+    width: 750px;
+    height: 750px;
+    margin-left: -375px;
+    margin-top: -375px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    animation: spin 68.7s linear infinite;
+  }
+
+.mars {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    background-color: #863222;
+    margin-top: -16px;
+    margin-left: -16px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+.mars_moon_orbit_1 {
+    height: 90px;
+    width: 90px;
+    /* border: 1px solid #111111; */
+    margin-top: -45px;
+    margin-left: -45px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+.mars_moon_spin_1 {
+    height: 90px;
+    width: 90px;
+    margin-top: -45px;
+    margin-left: -45px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    animation: spin 2s linear infinite;
+  }
+
+.mars_moon_1 {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: #ffffff;
+    margin-top: -6px;
+    margin-left: -6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+.mars_moon_orbit_2 {
+    height: 120px;
+    width: 120px;
+    /* border: 1px solid #111111; */
+    margin-top: -60px;
+    margin-left: -60px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+.mars_moon_spin_2 {
+    height: 120px;
+    width: 120px;
+    margin-top: -60px;
+    margin-left: -60px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    animation: spin 1s linear infinite;
+  }
+
+.mars_moon_2 {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: #ffffff;
+    margin-top: -6px;
+    margin-left: -6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+
+/* Jupiter */
+.jupiter_orbit {
+    width: 1250px;
+    height: 1250px;
+    border-radius: 50%;
+    border: 1px solid #10df8f;
+    margin-left: -625px;
+    margin-top: -625px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.jupiter_spin {
+    width: 1250px;
+    height: 1250px;
+    margin-left: -625px;
+    margin-top: -625px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    animation: spin 438s linear infinite;
+}
+
+.jupiter {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: #7f7269;
+    margin-top: -70px;
+    margin-left: -70px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+.jupiter_moon_orbit_1 {
+    height: 190px;
+    width: 190px;
+    /* border: 1px solid #111111; */
+    margin-top: -95px;
+    margin-left: -95px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+.jupiter_moon_spin_1 {
+    height: 190px;
+    width: 190px;
+    margin-top: -95px;
+    margin-left: -95px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    animation: spin 3s linear infinite;
+  }
+
+.jupiter_moon_1 {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: #ffffff;
+    margin-top: -6px;
+    margin-left: -6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+.jupiter_moon_orbit_2 {
+    height: 240px;
+    width: 240px;
+    /* border: 1px solid #111111; */
+    margin-top: -120px;
+    margin-left: -120px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+.jupiter_moon_spin_2 {
+    height: 280px;
+    width: 280px;
+    margin-top: -140px;
+    margin-left: -140px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    animation: spin 2s linear infinite;
+  }
+
+.jupiter_moon_2 {
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background: #ffffff;
+    margin-top: 8px;
+    margin-left: 8px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+.jupiter_moon_orbit_3 {
+    height: 300px;
+    width: 300px;
+    /* border: 1px solid #111111; */
+    margin-top: -150px;
+    margin-left: -150px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+.jupiter_moon_spin_3 {
+    height: 300px;
+    width: 300px;
+    margin-top: -150px;
+    margin-left: -150px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    animation: spin 4s linear infinite;
+  }
+
+.jupiter_moon_3 {
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: #ffffff;
+    margin-top: -6px;
+    margin-left: -6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+.jupiter_moon_orbit_4 {
+    height: 360px;
+    width: 360px;
+    /* border: 1px solid #111111; */
+    margin-top: -180px;
+    margin-left: -180px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+.jupiter_moon_spin_4 {
+    height: 360px;
+    width: 360px;
+    margin-top: -180px;
+    margin-left: -180px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    animation: spin 5s linear infinite;
+  }
+
+.jupiter_moon_4 {
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background: #ffffff;
+    margin-top: -6px;
+    margin-left: -6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+/* Saturn */
+.saturn_orbit {
+    width: 2200px;
+    height: 2200px;
+    border-radius: 50%;
+    border: 1px solid #0bd3c6;
+    margin-left: -1100px;
+    margin-top: -1100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.saturn_spin {
+    width: 2200px;
+    height: 2200px;
+    margin-left: -1100px;
+    margin-top: -1100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    animation: spin 1095s linear infinite;
+}
+
+.saturn {
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    background-color: #c6bb9f;
+    margin-top: -90px;
+    margin-left: -90px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+.saturn_ring {
+    height: 240px;
+    width: 200px;
+    border-radius: 50%;
+    border: 4px solid #eaedf1;
+    margin-left: -105px;
+    margin-top: -120px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    animation: spin 1095s linear infinite;
+}
+
+.saturn_moon_orbit_1 {
+    height: 300px;
+    width: 300px;
+    /* border: 1px solid #111111; */
+    margin-top: -150px;
+    margin-left: -150px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+.saturn_moon_spin_1 {
+    height: 300px;
+    width: 300px;
+    margin-top: -150px;
+    margin-left: -150px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    animation: spin 3s linear infinite;
+  }
+
+.saturn_moon_1 {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: #ffffff;
+    margin-top: -6px;
+    margin-left: -6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+.saturn_moon_orbit_2 {
+    height: 350px;
+    width: 350px;
+    /* border: 1px solid #111111; */
+    margin-top: -175px;
+    margin-left: -175px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+.saturn_moon_spin_2 {
+    height: 350px;
+    width: 350px;
+    margin-top: -175px;
+    margin-left: -175px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    animation: spin 2s linear infinite;
+  }
+
+.saturn_moon_2 {
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background: #ffffff;
+    margin-top: 8px;
+    margin-left: 8px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+.saturn_moon_orbit_3 {
+    height: 400px;
+    width: 400px;
+    /* border: 1px solid #111111; */
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+.saturn_moon_spin_3 {
+    height: 400px;
+    width: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    animation: spin 4s linear infinite;
+  }
+
+.saturn_moon_3 {
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background: #ffffff;
+    margin-top: -6px;
+    margin-left: -6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+.saturn_moon_orbit_4 {
+    height: 450px;
+    width: 450px;
+    /* border: 1px solid #111111; */
+    margin-top: -225px;
+    margin-left: -225px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+.saturn_moon_spin_4 {
+    height: 450px;
+    width: 450px;
+    margin-top: -225px;
+    margin-left: -225px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    animation: spin 5s linear infinite;
+  }
+
+.saturn_moon_4 {
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background: #ffffff;
+    margin-top: -6px;
+    margin-left: -6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+/* Uranus */
+.uranus_orbit {
+    height: 3150px;
+    width: 3150px;
+    border-radius: 50%;
+    border: 1px solid #0f51df;
+    margin-left: -1575px;
+    margin-top: -1575px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+}
+
+.uranus_spin {
+    height: 3150px;
+    width: 3150px;
+    margin-top: -1575px;
+    margin-left: -1575px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    animation: spin 3066s linear infinite;
+}
+
+.uranus {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #c1e6e9;
+    margin-top: -50px;
+    margin-left: -50px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+
+.uranus_moon_orbit_1 {
+    height: 300px;
+    width: 300px;
+    /* border: 1px solid #111111; */
+    margin-top: -150px;
+    margin-left: -150px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+.uranus_moon_spin_1 {
+    height: 300px;
+    width: 300px;
+    margin-top: -150px;
+    margin-left: -150px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    animation: spin 3s linear infinite;
+  }
+
+.uranus_moon_1 {
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background: #ffffff;
+    margin-top: -6px;
+    margin-left: -6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+.uranus_moon_orbit_2 {
+    height: 350px;
+    width: 350px;
+    /* border: 1px solid #111111; */
+    margin-top: -175px;
+    margin-left: -175px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+.uranus_moon_spin_2 {
+    height: 350px;
+    width: 350px;
+    margin-top: -175px;
+    margin-left: -175px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    animation: spin 2s linear infinite;
+  }
+
+.uranus_moon_2 {
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background: #ffffff;
+    margin-top: 8px;
+    margin-left: 8px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+.uranus_moon_orbit_3 {
+    height: 400px;
+    width: 400px;
+    /* border: 1px solid #111111; */
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+.uranus_moon_spin_3 {
+    height: 400px;
+    width: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    animation: spin 4s linear infinite;
+  }
+
+.uranus_moon_3 {
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background: #ffffff;
+    margin-top: -6px;
+    margin-left: -6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+.uranus_moon_orbit_4 {
+    height: 450px;
+    width: 450px;
+    /* border: 1px solid #111111; */
+    margin-top: -225px;
+    margin-left: -225px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+.uranus_moon_spin_4 {
+    height: 450px;
+    width: 450px;
+    margin-top: -225px;
+    margin-left: -225px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    animation: spin 5s linear infinite;
+  }
+
+.uranus_moon_4 {
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background: #ffffff;
+    margin-top: -6px;
+    margin-left: -6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+/* Neptune */
+.neptune_orbit {
+    height: 4100px;
+    width: 4100px;
+    border-radius: 50%;
+    border: 1px solid #d10ca6;
+    margin-left: -2050px;
+    margin-top: -2050px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.neptune_spin {
+    height: 4100px;
+    width: 4100px;
+    margin-top: -2050px;
+    margin-left: -2050px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    animation: spin 3066s linear infinite;
+}
+
+.neptune {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: #648adb;
+    margin-top: -40px;
+    margin-left: -40px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+.neptune_moon_orbit_1 {
+    height: 300px;
+    width: 300px;
+    /* border: 1px solid #111111; */
+    margin-top: -150px;
+    margin-left: -150px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+.neptune_moon_spin_1 {
+    height: 300px;
+    width: 300px;
+    margin-top: -150px;
+    margin-left: -150px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    animation: spin 3s linear infinite;
+  }
+
+.neptune_moon_1 {
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background: #ffffff;
+    margin-top: -6px;
+    margin-left: -6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+.neptune_moon_orbit_2 {
+    height: 350px;
+    width: 350px;
+    /* border: 1px solid #111111; */
+    margin-top: -175px;
+    margin-left: -175px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+.neptune_moon_spin_2 {
+    height: 350px;
+    width: 350px;
+    margin-top: -175px;
+    margin-left: -175px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    animation: spin 2s linear infinite;
+  }
+
+.neptune_moon_2 {
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: #ffffff;
+    margin-top: 8px;
+    margin-left: 8px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+.neptune_moon_orbit_3 {
+    height: 400px;
+    width: 400px;
+    /* border: 1px solid #111111; */
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+.neptune_moon_spin_3 {
+    height: 400px;
+    width: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    animation: spin 4s linear infinite;
+  }
+
+.neptune_moon_3 {
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background: #ffffff;
+    margin-top: -6px;
+    margin-left: -6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+.neptune_moon_orbit_4 {
+    height: 450px;
+    width: 450px;
+    /* border: 1px solid #111111; */
+    margin-top: -225px;
+    margin-left: -225px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+.neptune_moon_spin_4 {
+    height: 450px;
+    width: 450px;
+    margin-top: -225px;
+    margin-left: -225px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    animation: spin 5s linear infinite;
+  }
+
+.neptune_moon_4 {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: #ffffff;
+    margin-top: -6px;
+    margin-left: -6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+/* Spinning animations */
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}

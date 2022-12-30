@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 530px;
+    height: 530px;
+    background-color: #ffffff;
+    border: 2px solid #111111;
+    position: relative;
+    left: 35%;
+    /* z-index: 1; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background {
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(180deg, #25e525, #111111, #111111, #111111, #111111, #25e525);
+    animation: background_animation 2s ease infinite;
+    background-size: 300% 300%;
+    position: relative;
+}
+
+@keyframes background_animation { 
+    50% {
+        background-position:90% 100%
+    }
+}
+
+
+.blocks {
+    display: grid;
+    grid-template-columns: 99.5px 99.5px 99.5px 99.5px 99.5px;
+    grid-template-rows: 99.5px 99.5px 99.5px 99.5px 99.5px;
+    background-color: transparent;
+    border: 1px;
+    border-color: transparent;
+    gap: 0.5px;
+    color: #161616;
+}
+
+.grid_item{
+    background-color: #161616;
+}
+
+.grid_item:hover{
+    background-color: #00ff01;
+}
+
+.form_container {
+    height: 350px;
+    width: 350px;
+    background-color: #1e1e1e;
+    position: relative;
+    margin-top: -420px;
+    margin-left: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h1 {
+    color: #00fe00;
+}
+
+.input_fields {
+    display: flex;
+    flex-direction: column;
+}
+
