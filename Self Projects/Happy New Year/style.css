@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./Assets/HNY_Background.jpg);
+    background-repeat: no-repeat;
+    background-size: 1550px 750px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 20%;
+}
+
+.wish {
+    margin-top: 5%;
+    font: 7em sans-serif;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+.year {
+    font: 7em sans-serif;
+}
+
+span::before {
+    content: '';
+    animation: animate infinite 10s;
+}
+
+@keyframes glow {
+    from {
+     color: #fff;
+   text-shadow: 0 0 10px #00fff2, 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 90px #00fff2;
+ }
+ 
+ to {
+    color: gray;
+   text-shadow: 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 80px #00fff2, 0 1 90px #00fff2;
+ }
+}
+
+@keyframes animate {
+    0% {
+        content: '2'
+    }
+
+    /* 20% {
+        content: '3';
+    } */
+
+    /* 40% {
+        content: '2';
+    } */
+
+    /* 60% {
+        content: '3';
+    } */
+
+    /* 80% {
+        content: '2';
+    } */
+
+    100% {
+        content: '3';
+    }
+}
+
