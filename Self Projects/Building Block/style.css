@@ -1,0 +1,350 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    background: #a9dbdd;
+    z-index: 0;
+}
+
+.house {
+    position: relative;
+    width: 600px;
+    height: 500px;
+    background: #a9dbdf;
+    border: 8px solid #1d3656;
+    z-index: 1;
+}
+
+.cloud {
+	width: 350px; 
+    height: 120px;
+	background: #f2f9fe;
+	background: linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
+	border-radius: 100px;
+	position: relative;
+	margin: 120px auto 20px;
+    animation-duration: 3s;
+    animation-name: animate_cloud;
+}
+
+.cloud:after, .cloud:before {
+	content: '';
+	position: absolute;
+	background: #f2f9fe;
+	z-index: -1
+}
+
+.cloud:after {
+	width: 100px; 
+    height: 100px;
+	top: -50px; 
+    left: 50px;
+	border-radius: 100px;
+}
+
+.cloud:before {
+	width: 180px; 
+    height: 180px;
+	top: -90px; 
+    right: 50px;
+	border-radius: 200px;
+}
+
+.floor1 {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 300px;
+    height: 120px;
+    background: #eafdf6;
+    border-top: 8px solid #243955;
+    border-left: 8px solid #243955;
+    border-right: 8px solid #243955;
+    transform: translateX(-50%);
+    animation-duration: 3s;
+    animation-name: animate, hide;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.floor1::before {
+    content: '';
+    position: absolute;
+    top: -30px;
+    left: -15px;
+    right: 2px;
+    width: 105%;
+    height: 20px;
+    border: 8px solid #1d3656;
+    background: #4a809d;
+}
+
+.floor2 {
+    position: absolute;
+    bottom: 29.4%;
+    left: 50%;
+    width: 300px;
+    height: 200px;
+    background: #eafdf6;
+    border-top: 8px solid #243955;
+    border-left: 8px solid #243955;
+    border-right: 8px solid #243955;
+    transform: translateX(-50%);
+    animation-duration: 8s;
+    animation-name: animate, hide;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.floor2::before {
+    content: '';
+    position: absolute;
+    top: -30px;
+    left: -15px;
+    right: 2px;
+    width: 105%;
+    height: 20px;
+    border: 8px solid #1d3656;
+    background: #4a809d;
+}
+
+.door1 {
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+    width: 35px;
+    height: 80px;
+    border-top: 8px solid #243955;
+    border-left: 8px solid #243955;
+    border-right: 8px solid #243955;
+    animation-duration: 6s;
+    animation-name: animate, hide;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.door2 {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 35px;
+    height: 80px;
+    border-top: 8px solid #243955;
+    border-right: 8px solid #243955;
+    animation-duration: 6s;
+    animation-name: animate, hide;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.window1 {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    width: 50px;
+    height: 60px;
+    border: 8px solid #1d3656;
+    animation-duration: 6s;
+    animation-name: animate, hide;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.window2 {
+    position: absolute;
+    bottom: 10%;
+    left: 75%;
+    width: 50px;
+    height: 60px;
+    border: 8px solid #1d3656;
+    animation-duration: 6s;
+    animation-name: animate, hide;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+.window3 {
+    position: absolute;
+    bottom: 10%;
+    left: 75%;
+    width: 50px;
+    height: 50px;
+    border: 8px solid #1d3656;
+    animation-duration: 15s;
+    animation-name: animate, hide;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.base {
+    position: relative;
+    bottom: -85%;
+    left: -52%;
+    width: 70px;
+    height: 25px;
+    background: #4b829c;
+    border: 8px solid #1d3656;
+    animation-duration: 15s;
+    animation-name: animate, hide;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.window4 {
+    position: absolute;
+    bottom: 10%;
+    left: 42%;
+    width: 50px;
+    height: 50px;
+    border: 8px solid #1d3656;
+    animation-duration: 15s;
+    animation-name: animate, hide;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.window5 {
+    position: absolute;
+    bottom: 10%;
+    left: 8%;
+    width: 50px;
+    height: 50px;
+    border: 8px solid #1d3656;
+    animation-duration: 15s;
+    animation-name: animate, hide;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.window6 {
+    position: absolute;
+    bottom: 50%;
+    left: 75%;
+    width: 50px;
+    height: 50px;
+    border: 8px solid #1d3656;
+    animation-duration: 15s;
+    animation-name: animate, hide;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.window7 {
+    position: absolute;
+    bottom: 50%;
+    left: 42%;
+    width: 50px;
+    height: 50px;
+    border: 8px solid #1d3656;
+    animation-duration: 15s;
+    animation-name: animate, hide;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.window8 {
+    position: absolute;
+    bottom: 50%;
+    left: 8%;
+    width: 50px;
+    height: 50px;
+    border: 8px solid #1d3656;
+    animation-duration: 15s;
+    animation-name: animate, hide;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.tree1 {
+    position: absolute;
+    bottom: 9%;
+    left: 5%;
+    width: 50px;
+    height: 100px;
+    background: #4d7e9a;
+    border-radius: 40%;
+    border: 8px solid #1d3656;
+    animation-duration: 10s;
+    animation-name: animate, hide;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.tree1::before {
+    content: '';
+    position: absolute;
+    top: 60px;
+    /* bottom: -40%; */
+    left: 12px;
+    width: 10px;
+    height: 80px;
+    background: #15394d;
+}
+
+.tree2 {
+    position: absolute;
+    bottom: 9%;
+    left: 85%;
+    width: 60px;
+    height: 150px;
+    background: #4d7e9a;
+    border-radius: 40%;
+    border: 8px solid #1d3656;
+    animation-duration: 10s;
+    animation-name: animate, hide;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.tree2::before {
+    content: '';
+    position: absolute;
+    top: 110px;
+    /* bottom: -40%; */
+    left: 18px;
+    width: 10px;
+    height: 80px;
+    background: #15394d;
+}
+
+@keyframes animate {
+    from {
+        margin-bottom: -30%;
+      }
+    
+      to {
+        margin-bottom: 0%;
+      }
+}
+
+@keyframes animate_cloud {
+    from {
+        margin-right: 0%;
+      }
+    
+      to {
+        margin-right: 20%;
+      }
+}
+
+@keyframes hide {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    95% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }    
+}
