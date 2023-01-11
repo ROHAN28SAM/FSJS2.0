@@ -25,6 +25,48 @@ body {
     background-color: #110863;
 }
 
+.waves1 {
+    position: absolute;
+    border-bottom: 20px solid #110863;
+    border-right: 25px solid transparent;
+    border-bottom-left-radius: 20px;
+    width: 50px;
+    margin-top: 275px;
+    margin-left: 90px;
+    transform: rotate(160deg);
+}
+
+.waves2 {
+    position: absolute;
+    border-bottom: 20px solid #110863;
+    border-right: 25px solid transparent;
+    border-bottom-left-radius: 20px;
+    width: 50px;
+    margin-top: 275px;
+    margin-left: -90px;
+    transform: rotate(160deg);
+}
+.waves3 {
+    position: absolute;
+    border-bottom: 20px solid #110863;
+    border-right: 25px solid transparent;
+    border-bottom-left-radius: 20px;
+    width: 50px;
+    margin-top: 275px;
+    margin-left: 270px;
+    transform: rotate(160deg);
+}
+.waves4 {
+    position: absolute;
+    border-bottom: 20px solid #110863;
+    border-right: 25px solid transparent;
+    border-bottom-left-radius: 20px;
+    width: 50px;
+    margin-top: 280px;
+    margin-left: 400px;
+    transform: rotate(160deg);
+}
+
 .main_back {
     position: absolute;
     height: 570px;
@@ -189,10 +231,11 @@ body {
 
 .light {
     position: absolute;
-    border-left: 45px solid transparent;
-	border-right: 45px solid transparent;
-	border-bottom: 150px solid #504a86;
-    transform: rotate(90deg);
-    margin-top: -100px;
-    margin-left: -115px;
-}
+    width: 500px;
+    height: 100px;
+    background: linear-gradient(to left, #85829b, #190f72);
+    clip-path: polygon(0% 0%, 50% 45%, 50% 55%, 0% 100%);
+    transform: translate(-18%, -45%);
+    margin-top: -30px;
+    margin-left: -155px;
+  }
