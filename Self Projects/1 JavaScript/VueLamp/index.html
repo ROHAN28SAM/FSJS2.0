@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue Lamps</title>
+
+    <script src="./VueLamp.js"></script>
+
+    <!-- Tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#1a1e23]">
+    <div class="mx-auto flex flex-col flex-wrap p-2 justify-center items-center md:flex-row md:justify-around md:p-5">
+        <div class="flex items-center justify-center title-font font-medium">
+            <img class="w-1/12" src="./Assets/menu.png" alt="menu">
+            <img class="ml-3 w-8/12" src="./Assets/logo.png" alt="logo">
+        </div>
+        <div class="hidden sm:flex md:text-base">
+            <a class="mr-10 text-[#ffffff] font-bold">Latest</a>
+            <a class="mr-10 text-[#ffffff] font-bold">Morden</a>
+            <a class="mr-10 text-[#ffffff] font-bold">Contemporary</a>
+            <a class="mr-10 text-[#ffffff] font-bold">Affordable</a>
+        </div>
+        <div class="leading-relaxed">
+            <input type="range" name="light_range" min="0" step="1" max="5" value="5" id="light_range" oninput="updateLight(this.value)">
+        </div>
+    </div>
+
+    <main>
+        <div class="grid grid-cols-1 justify-center items-center md:grid-cols-2">
+            <div class="flex flex-col">
+                <div class="flex justify-center item-center"><img class="w-3/12 md:w-2/12" src="./Assets/lamp.png" alt="lamp"></div>
+                <div class="flex justify-center item-center "><div class="light bg-gradient-to-l from-[#e7e7e9] to-[#454548] h-1/2 w-1/2 sm:h-60 sm:w-200" style="clip-path: polygon(35% 0%, 65% 0%, 100% 100%, 0% 100%)"></div></div>
+            </div>
+            <div>
+                <h1>Latest <br class="hidden lg:inline-block">in Lighting</h1>
+                <p>This is the first lamp from our company. we're making a huge collection of <br class="hidden lg:inline-block">morden Lamps in all categories from home use to office use.</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
