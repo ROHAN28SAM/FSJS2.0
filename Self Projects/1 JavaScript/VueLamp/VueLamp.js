@@ -55,11 +55,76 @@ function updateLight(myValue){
             class_elements.classList.remove("w-[150px]");
             class_elements.classList.remove("w-[200px]");
             class_elements.classList.remove("w-[250px]");
-            class_elements.classList.add("h-[350px]");
-            class_elements.classList.add("w-[350px]")
         }
     }
     else {
         console.log("Not Working");
+    }
+}
+
+function updateLightOpacity(myValue){
+    document.getElementById("light_range1").innerHTML = myValue;
+    console.log(myValue);
+    let class_elements = document.querySelector(".light");
+    let class_two = Object.values(class_elements.classList);
+    if (myValue === '0'){
+        // if (class_two.includes("opacity-100")){
+            class_elements.classList.remove("opacity-100")
+            class_elements.classList.remove("opacity-90")
+            class_elements.classList.remove("opacity-75")
+            class_elements.classList.remove("opacity-50")
+            class_elements.classList.remove("opacity-25")
+            class_elements.classList.add("opacity-0")
+        // }
+    }
+    else if (myValue === '1') {
+        // if (class_two.includes("opacity")){
+            class_elements.classList.remove("opacity-100")
+            class_elements.classList.remove("opacity-90")
+            class_elements.classList.remove("opacity-75")
+            class_elements.classList.remove("opacity-50")
+            class_elements.classList.remove("opacity-0")
+            class_elements.classList.add("opacity-25")
+        // }
+    }
+    else if (myValue === '2') {
+        // if (class_two.includes("opacity-100")){
+            class_elements.classList.remove("opacity-100")
+            class_elements.classList.remove("opacity-0")
+            class_elements.classList.remove("opacity-25")
+            class_elements.classList.remove("opacity-75")
+            class_elements.classList.remove("opacity-90")
+            class_elements.classList.add("opacity-50")
+        // }
+    }
+    else if (myValue === '3') {
+        // if (class_two.includes("opacity-100")){
+            class_elements.classList.remove("opacity-100")
+            class_elements.classList.remove("opacity-0")
+            class_elements.classList.remove("opacity-25")
+            class_elements.classList.remove("opacity-50")
+            class_elements.classList.remove("opacity-90")
+            class_elements.classList.add("opacity-75")
+        // }
+    }
+    else if (myValue === '4') {
+        // if (class_two.includes("opacity-100")){
+            class_elements.classList.remove("opacity-100")
+            class_elements.classList.remove("opacity-0")
+            class_elements.classList.remove("opacity-25")
+            class_elements.classList.remove("opacity-50")
+            class_elements.classList.remove("opacity-75")
+            class_elements.classList.add("opacity-90")
+        // }
+    }
+    else if (myValue === '5'){
+        // if (class_two.includes("opacity-100")){
+            class_elements.classList.remove("opacity-0")
+            class_elements.classList.remove("opacity-25")
+            class_elements.classList.remove("opacity-50")
+            class_elements.classList.remove("opacity-75")
+            class_elements.classList.remove("opacity-90")
+
+        // }
     }
 }
