@@ -128,3 +128,17 @@ function updateLightOpacity(myValue){
         // }
     }
 }
+
+function updateColor(myValue){
+    document.getElementById("color_input").innerHTML = myValue;
+    console.log(myValue);
+    let class_elements = document.querySelector(".light");
+    let class_two = Object.values(class_elements.classList);
+    if (class_two.includes("from-[#e7e7e9]")){
+        class_elements.classList.remove("\bfrom");
+        class_elements.classList.add("from-[" + myValue + "]");
+        console.log(class_elements.classList);
+    }else{
+        console.log("Not Working");
+    }
+}

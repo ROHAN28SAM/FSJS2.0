@@ -32,6 +32,10 @@
             <label for="light_range2" class="text-[#ffffff]">Light Opacity</label>
             <input type="range" name="light_range1" min="0" step="1" max="5" value="5" id="light_range1" oninput="updateLightOpacity(this.value)">
           </div>
+          <div class="flex flex-col gap-4">
+            <label for="color" class="text-[#ffffff]">Color</label>
+            <input type="color" name="color_input" id="color_input" value="#e7e7e9" oninput="updateColor(this.value)">
+          </div>
           
         </div>
     </div>
@@ -40,7 +44,7 @@
         <div class="grid grid-cols-1 justify-center items-center md:grid-cols-2">
             <div class="flex flex-col md:mt-[-110px] md:ml-[150px]">
                 <div class="flex justify-center item-center"><img class="w-3/12 md:w-2/12" src="./Assets/lamp.png" alt="lamp"></div>
-                <div class="flex justify-center item-center"><div class="light bg-gradient-to-l from-[#e7e7e9] to-[#454548] opacity-100 h-[350px] w-[350px]" style="clip-path: polygon(35% 0%, 65% 0%, 100% 100%, 0% 100%)"></div></div>
+                <div class="flex justify-center item-center"><div class="light bg-gradient-to-b from-[#e7e7e9] to-[#454548] opacity-100 h-[350px] w-[350px]" style="clip-path: polygon(35% 0%, 65% 0%, 100% 100%, 0% 100%)"></div></div>
             </div>
             <div class="flex flex-col justify-center items-start">
                 <h1 class="text-[#ffffff] mt-9 font-bold text-2xl leading-relaxed sm:text-4xl md:text-6xl">Latest <br class="hidden lg:inline-block">in Lighting</h1>
