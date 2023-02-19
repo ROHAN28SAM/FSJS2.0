@@ -137,37 +137,33 @@
       </section>
     </main>
     <script>
+      // Assignment 1
       // Add Scroll bar
-      const element = document.querySelector("aside");
-      element.setAttribute("onscroll", "scrollFunction()");
-      const addP = document.createElement("p");
-      addP.classList.add("demo");
-      document.querySelector("aside").appendChild(addP);
-      function scrollFunction() {
-      const element = document.querySelector("aside");
-      let x = element.scrollLeft;
-      let y = element.scrollTop;
-      document.getElementsByClassName("demo").innerHTML = "Horizontally: " + x.toFixed() + "<br>Vertically: " + y.toFixed();
-    }
+      document.querySelector("aside").style.overflowY = "scroll";
 
-      // // create separator line
-      // let sep_line = document.createElement("hr");
-      // sep_line.classList.add("hr-line");
-      // document.querySelector("aside").appendChild(sep_line);
+      // create separator line
+      let sep_line = document.createElement("hr");
+      sep_line.classList.add("hr-line");
+      document.querySelector("aside").appendChild(sep_line);
 
-      // // create heading
-      // let new_heading = document.createElement("h2");
-      // new_heading.classList.add("new-head");
-      // let textnode = document.createTextNode("This is my custom heading");
-      // new_heading.appendChild(textnode);
-      // document.querySelector("aside").appendChild(new_heading);
+      // create heading
+      let new_heading = document.createElement("h2");
+      new_heading.classList.add("new-head");
+      let textnode = document.createTextNode("This is my custom heading");
+      new_heading.appendChild(textnode);
+      document.querySelector("aside").appendChild(new_heading);
 
-      // // create paragraph
-      // let new_para = document.createElement("p");
-      // new_para.classList.add("new-p");
-      // let textnode2 = document.createTextNode("This is my custome text for the paragraph, please ignore it.");
-      // new_para.appendChild(textnode2);
-      // document.querySelector("aside").appendChild(new_para);
+      // create paragraph
+      let new_para = document.createElement("p");
+      new_para.classList.add("new-p");
+      let textnode2 = document.createTextNode("This is my custome text for the paragraph, please ignore it.");
+      new_para.appendChild(textnode2);
+      document.querySelector("aside").appendChild(new_para);
+
+
+      // Assignment 2
+      // Change background
+      document.querySelector("body").style.backgroundImage = "white";
     </script>
   </body>
 </html>
