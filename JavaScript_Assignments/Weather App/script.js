@@ -23,7 +23,7 @@ const getData = async (event) => {
     // Fetch Details
 
     const fetchLatLon = await fetch(
-        `http://api.openweathermap.org/geo/1.0/direct?q=${city}&appid=eef6fb6356c742e8922fb9cc9fa345fd`
+        `http://api.openweathermap.org/geo/1.0/direct?q=${city}&appid=<api_key`
     );
     const orgLatLon = await fetchLatLon.json()
     let latLon = orgLatLon;
@@ -33,7 +33,7 @@ const getData = async (event) => {
     console.log(lat);
     console.log(lon);
 
-    const fetchData = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=eef6fb6356c742e8922fb9cc9fa345fd`)
+    const fetchData = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=<api_key>`)
     const orgData = await fetchData.json();
     let data = orgData;
     console.log(data);
