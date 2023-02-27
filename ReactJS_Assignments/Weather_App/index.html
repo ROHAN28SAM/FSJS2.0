@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App - By Rohan</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[url('https://images.unsplash.com/photo-1677163333275-8b2157ef389a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80')] bg-no-repeat bg-cover">
+  <!-- Navbar -->
+  <div class="flex m-9 justify-around">
+    <h2 class="text-4xl text-[#E8BD0D]">Weather</h2>
+    <form onsubmit="getData(event)" class="searchData">
+      <input type="search" name="search_box" id="searchBox" placeholder="Enter City Name Here..." class="p-1 rounded-lg">
+      <button type="submit" class="bg-sky-500 px-2 py-1 m-2 rounded-lg">Search</button>
+    </form>
+  </div>
+  <!-- Main -->
+  <div class="p-3 grid grid-cols-2 justify-around align-center">
+    <!-- 1st Half of Main -->
+    <div class="p-6 grid grid-cols-1 justify-center align-center">
+      <div class="flex justify-center align-center">
+        <img src="" width="300px" height="100px" alt="" id="iconImage">
+      </div>
+      <div class="m-2 text-[#ffffff] flex justify-center align-center">
+        <p id="weatherText">__</p>
+      </div>
+    </div>
+    <!-- END of 1st Part -->
+
+    <!-- 2nd Half of Main -->
+    <div class="grid grid-rows-3 p-4">
+      <!-- City, State and Country Name  -->
+      <div>
+        <div class="m-2 text-[#ffffff] flex justify-center align-center gap-4">
+          <p id="cityName">City Name</p>
+          <p id="cityNameValue">__</p>
+        </div>
+
+        <div class="m-2 text-[#ffffff] flex justify-center align-center gap-4">
+          <p id="stateName">State Name</p>
+          <p id="stateNameValue">__</p>
+        </div>
+
+        <div class="m-2 text-[#ffffff] flex justify-center align-center gap-4">
+          <p id="countryName">Country Name</p>
+          <p id="countryNameValue">__</p>
+        </div>
+      </div>
+
+      <!-- Current Temperature, Max, Min, Wind Speed and Humidity -->
+      <div class="grid grid-cols-2 gap-4">
+        <div class="m-2 text-[#ffffff] col-span-2 flex justify-start align-center gap-4">
+          <p id="currentTemperature">Current Temperature</p>
+          <p id="currentTemperatureValue">__</p>
+        </div>
+        <div class="m-2 text-[#ffffff] flex justify-start align-center gap-4">
+          <p id="maximumTemperature">Maximum Temperature</p>
+          <p id="maximumTemperatureValue">__</p>
+        </div>
+        <div class="m-2 text-[#ffffff] flex justify-start align-center gap-4">
+          <p id="minimumTemperature">Minimum Temperature</p>
+          <p id="minimumTemperatureValue">__</p>
+        </div>
+        <div class="m-2 text-[#ffffff] flex justify-start align-center gap-4">
+          <p id="windSpeed">Wind Speed</p>
+          <p id="windSpeedValue">__</p>
+        </div>
+        <div class="m-2 text-[#ffffff] flex justify-start align-center gap-4">
+          <p id="Humidity">Humidity</p>
+          <p id="HumidityValue">__</p>
+        </div>
+      </div>
+      <!-- Five Days Forecast -->
+      <div class="border-2 border-solid border-white p-2">
+        <h2 class="text-xl text-[#ffffff]">Forecast</h2>
+        <div class="grid grid-cols-5 gap-2">
+          <!-- One -->
+          <div>
+            <div>
+              <img id="forecast1_image" src="" alt="">
+            </div>
+            <div class="flex justify-start align-center gap-4">
+              <p id="forecast1MaxTemp" class="text-[#ffffff]">Max Temp</p>
+              <p id="forecast1MaxTempValue" class="text-[#ffffff]">__</p>
+            </div>
+            <div class="flex justify-start align-center gap-4">
+              <p id="forecast1MinTemp" class="text-[#ffffff]">Min Temp</p>
+              <p id="forecast1MinTempValue" class="text-[#ffffff]">__</p>
+            </div>
+            <p id="date1" class="flex justify-center align-center text-[#ffffff]">__</p>
+          </div>
+          <!-- Two -->
+          <div>
+            <div>
+              <img id="forecast2_image" src="" alt="">
+            </div>
+            <div class="flex justify-start align-center gap-4">
+              <p id="forecast2MaxTemp" class="text-[#ffffff]">Max Temp</p>
+              <p id="forecast2MaxTempValue" class="text-[#ffffff]">__</p>
+            </div>
+            <div class="flex justify-start align-center gap-4">
+              <p id="forecast2MinTemp" class="text-[#ffffff]">Min Temp</p>
+              <p id="forecast2MinTempValue" class="text-[#ffffff]">__</p>
+            </div>
+            <p id="date2" class="flex justify-center align-center text-[#ffffff]">__</p>
+          </div>
+          <!-- Three -->
+          <div>
+            <div>
+              <img id="forecast3_image" src="" alt="">
+            </div>
+            <div class="flex justify-start align-center gap-4">
+              <p id="forecast3MaxTemp" class="text-[#ffffff]">Max Temp</p>
+              <p id="forecast3MaxTempValue" class="text-[#ffffff]">__</p>
+            </div>
+            <div class="flex justify-start align-center gap-4">
+              <p id="forecast3MinTemp" class="text-[#ffffff]">Min Temp</p>
+              <p id="forecast3MinTempValue" class="text-[#ffffff]">__</p>
+            </div>
+            <p id="date3" class="flex justify-center align-center text-[#ffffff]">__</p>
+          </div>
+          <!-- Four -->
+          <div>
+            <div>
+              <img id="forecast4_image" src="" alt="">
+            </div>
+            <div class="flex justify-start align-center gap-4">
+              <p id="forecast4MaxTemp" class="text-[#ffffff]">Max Temp</p>
+              <p id="forecast4MaxTempValue" class="text-[#ffffff]">__</p>
+            </div>
+            <div class="flex justify-start align-center gap-4">
+              <p id="forecast4MinTemp" class="text-[#ffffff]">Min Temp</p>
+              <p id="forecast4MinTempValue" class="text-[#ffffff]">__</p>
+            </div>
+            <p id="date4" class="flex justify-center align-center text-[#ffffff]">__</p>
+          </div>
+          <!-- Five -->
+          <div>
+            <div>
+              <img id="forecast5_image" src="" alt="">
+            </div>
+            <div class="flex justify-start align-center gap-4">
+              <p id="forecast5MaxTemp" class="text-[#ffffff]">Max Temp</p>
+              <p id="forecast5MaxTempValue" class="text-[#ffffff]">__</p>
+            </div>
+            <div class="flex justify-start align-center gap-4">
+              <p id="forecast5MinTemp" class="text-[#ffffff]">Min Temp</p>
+              <p id="forecast5MinTempValue" class="text-[#ffffff]">__</p>
+            </div>
+            <p id="date5" class="flex justify-center align-center text-[#ffffff]">__</p>
+          </div>
+        </div>
+      </div>
+      <!-- END OF 2nd Part -->
+    </div>
+  </div>
+  <!-- Footer -->
+  <script src="./script.js"></script>
+</body>
+</html>
